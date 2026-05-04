@@ -1,0 +1,16 @@
+.{
+    .name = .erazure,
+    .fingerprint = 0xd0332aeb9d423564,
+    .minimum_zig_version = "0.16.0",
+    .version = "0.0.1",
+    .paths = .{
+        "build.zig.zon",
+        "build.zig",
+
+        "src",
+        "ref",
+
+        "search.zig",
+        "params.zon",
+    },
+}
