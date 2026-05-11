@@ -29,7 +29,7 @@ pub fn Field(comptime w: u4) type {
         /// form (e.g. 7 for GF(4)) doesn't always fit in `Element`.
         pub const primitives: []const u16 = switch (w) {
             2 => &.{7},
-            4 => &.{19}, // TODO: GF(16) has a second primitive (25 = x^4+x^3+1)
+            4 => &.{ 19, 25 },
             8 => &.{ 29, 43, 45, 77, 95, 99, 101, 105, 113, 135, 141, 169, 195, 207, 231, 245 },
             else => @compileError("`w` must be a power of two less than or equal to 8"),
         };
